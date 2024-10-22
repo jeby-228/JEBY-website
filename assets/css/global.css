@@ -1,0 +1,38 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding-top: 60px; /* 為固定的頁首留出空間 */
+}
+
+/* 自定義斷點 */
+@media (min-width: 576px) {
+  /* 小型設備 (手機, 600px 以上) */
+}
+
+@media (min-width: 768px) {
+  /* 中型設備 (平板, 768px 以上) */
+}
+
+@media (min-width: 992px) {
+  /* 大型設備 (筆記本電腦/桌面, 992px 以上) */
+}
+
+@media (min-width: 1200px) {
+  /* 特大型設備 (大型筆記本電腦和桌面, 1200px 以上) */
+}
