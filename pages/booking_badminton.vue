@@ -1,14 +1,15 @@
 <template>
   <div class="booking-system">
     <h1>{{ $t('badmintonBookingSystem') }}</h1>
+    <input type="date" v-model="selectedDate" />
     <div class="courts-container">
       <div v-for="court in courts" :key="court.id" class="court">
         <h2>{{ $t('court') }} {{ court.name }}</h2>
         <div class="time-slots">
           <div v-for="slot in court.timeSlots" :key="slot.id" class="time-slot">
             <span>{{ formatTime(slot.startTime) }} - {{ formatTime(slot.endTime) }}</span>
-            <button 
-              @click="bookCourt(court.id, slot.id)" 
+            <button
+              @click="bookCourt(court.id, slot.id)"
               :disabled="slot.isBooked"
               :class="{ 'booked': slot.isBooked }"
             >
@@ -26,6 +27,8 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
+
+const selectedDate = ref(new Date().toISOString().split('T')[0]) // 新增選擇的日期
 
 const courts = ref([
   {
