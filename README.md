@@ -24,7 +24,7 @@
 
 1. 克隆此倉庫：
    ```
-   git clone https://github.com/您的用戶名/jeby-design-website.git
+   git clone https://github.com/jeby-228/jeby-design-website.git
    cd jeby-design-website
    ```
 
