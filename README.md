@@ -24,7 +24,7 @@
 
 1. 克隆此儲存庫：
    ```
-   git clone https://github.com/jeby-228/jeby-design-website.git
+   git clone https://github.com/jeby-228/JEBY-website.git
    cd jeby-design-website
    ```
 
