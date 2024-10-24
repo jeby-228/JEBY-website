@@ -26,5 +26,11 @@
   "price": "Precio",
   "duration": "Duración",
   "hour": "hora",
-  "hours": "horas"
+  "hours": "horas",
+  "selectedDate":"Fecha seleccionada",
+  "confirmBooking":"Confirmar reserva",
+  "confirmBookingTitle":"Confirmar reserva",
+  "confirmBookingMessage":"¿Estás seguro de que quieres reservar {date}?",
+  "cancel":"Cancelar",
+  "confirm":"Confirmar"
 }

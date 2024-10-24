@@ -42,5 +42,11 @@
   "booked": "Booked",
   "bookingSuccess": "You have successfully booked {court} for the {startTime} - {endTime} slot.",
   "bookingCancel": "You have cancelled your booking for {court} from {startTime} to {endTime}.",
-  "menu":"Menu"
+  "menu":"Menu",
+  "selectedDate":"Selected Date",
+  "confirmBooking":"Confirm Booking",
+  "confirmBookingTitle":"Confirm Booking",
+  "confirmBookingMessage":"Are you sure you want to book {date}?",
+  "cancel":"Cancel",
+  "confirm":"Confirm"
 }

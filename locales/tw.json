@@ -42,5 +42,11 @@
   "booked": "已預訂",
   "bookingSuccess": "您已成功預訂 {court} 的 {startTime} - {endTime} 時段。",
   "bookingCancel": "您已取消預訂 {court} 的 {startTime} - {endTime} 時段。",
-  "menu": "菜單"
+  "menu": "菜單",
+  "selectedDate":"選擇日期",
+  "confirmBooking":"確認預訂",
+  "confirmBookingTitle":"確認預訂",
+  "confirmBookingMessage":"您確定要預訂 {date} 嗎？",
+  "cancel":"取消",
+  "confirm":"確認"
 }
