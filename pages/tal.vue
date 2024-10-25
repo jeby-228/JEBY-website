@@ -16,12 +16,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 
-const title = ref('基本頁面')
-const description = ref('這是一個使用 Tailwind CSS 的基本 Vue.js 頁面範本。')
 
-const handleClick = () => {
-  alert('按鈕被點擊了！')
-}
+
+
 </script>

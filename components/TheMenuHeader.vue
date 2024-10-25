@@ -6,8 +6,8 @@
         <div class="flex items-center space-x-4">
           <div class="relative">
             <button @click="toggleLanguageMenu" class="flex items-center text-white">
-              <span :class="`fi fi-${languageFlags[locale]} mr-2`"></span>
-              {{ languageNames[locale] }}
+              <span :class="`fi fi-${languageFlags[locale as keyof typeof languageFlags]} mr-2`"></span>
+              {{ languageNames[locale as keyof typeof languageNames] }}
             </button>
             <div v-if="showLanguageMenu" class="absolute right-0 mt-2 bg-white rounded shadow-lg">
               <button
