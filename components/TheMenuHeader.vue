@@ -6,23 +6,20 @@
         <div class="flex items-center space-x-4">
           <div class="relative">
             <button @click="toggleLanguageMenu" class="flex items-center text-white">
-              <span :class="`fi fi-${languageFlags[locale as keyof typeof languageFlags]} mr-2`"></span>
-              {{ languageNames[locale as keyof typeof languageNames] }}
+              <span :class="`fi fi-${languageFlags[locale]} mr-2`"></span>
+              {{ languageNames[locale] }}
             </button>
-            <div v-if="showLanguageMenu" class="absolute right-0 mt-2 bg-white rounded shadow-lg">
-              <button
-                v-for="(flag, lang) in languageFlags"
-                :key="lang"
-                @click="changeLanguage(lang)"
-                class="flex items-center w-full px-4 py-2 text-left hover:bg-gray-100"
-              >
+            <div v-if="showLanguageMenu" class="bg-black absolute right-0 mt-2 bg-white rounded shadow-lg">
+              <button v-for="(flag, lang) in languageFlags" :key="lang" @click="changeLanguage(lang)"
+                class="bg-black flex items-center w-full px-4 py-2 text-left hover:bg-gray-100">
                 <span :class="`fi fi-${flag} mr-2`"></span>
                 {{ languageNames[lang] }}
               </button>
             </div>
           </div>
-          <button @click="toggleMenu" class="text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <button @click="toggleMenu" class="bg-black text-white hover:text-fuchsia-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -32,18 +29,19 @@
   </header>
   <div
     :class="['fixed top-0 right-0 h-full bg-black bg-opacity-80 backdrop-blur-lg transition-all duration-300', menuOpen ? 'w-64' : 'w-0']"
-    style="z-index: 1001;"
-  >
-    <div class="flex flex-col h-full p-6 overflow-y-auto">
-      <button @click="toggleMenu" class="self-end text-white mb-6">
+    style="z-index: 1001;">
+    <div class="bg-black flex flex-col h-full p-6 overflow-y-auto">
+      <button @click="toggleMenu" class="bg-black self-end text-white mb-6">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
       <NuxtLink class="text-white hover:text-gray-300 mb-4" to="/" @click="toggleMenu">{{ $t('home') }}</NuxtLink>
-      <NuxtLink class="text-white hover:text-gray-300 mb-4" to="/booking_badminton" @click="toggleMenu">{{ $t('booking_badminton') }}</NuxtLink>
+      <NuxtLink class="text-white hover:text-gray-300 mb-4" to="/booking_badminton" @click="toggleMenu">{{
+        $t('booking_badminton') }}</NuxtLink>
       <NuxtLink class="text-white hover:text-gray-300 mb-4" to="/about" @click="toggleMenu">{{ $t('about') }}</NuxtLink>
-      <NuxtLink class="text-white hover:text-gray-300 mb-4" to="/contact" @click="toggleMenu">{{ $t('contact') }}</NuxtLink>
+      <NuxtLink class="text-white hover:text-gray-300 mb-4" to="/contact" @click="toggleMenu">{{ $t('contact') }}
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -118,5 +116,9 @@ watch(locale, (newLocale) => {
 </script>
 
 <style scoped>
+.absolute{
+  background-color: rgba(12, 10, 10, 0.509);
+}
+
 /* 如果需要，可以在這裡添加特定的樣式 */
 </style>
