@@ -1,1 +1,0 @@
-export { default } from "file:///D:/Desktop/%E5%B0%8F%E5%8F%AF%E6%84%9B%E5%AD%B8%E6%9E%B6%E7%B6%B2%E7%AB%99/node_test/jeby_website/my-nuxt-project/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
