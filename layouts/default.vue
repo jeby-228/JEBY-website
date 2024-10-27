@@ -16,7 +16,7 @@ import TheFooter from '~/components/TheFooter.vue'
 </script>
 
 <style>
-@import '@/assets/css/global.css';
+
 
 .app-container {
   overflow-x: hidden;
