@@ -18,6 +18,8 @@ import TheFooter from '~/components/TheFooter.vue'
 <style>
 
 
+
+
 .app-container {
   overflow-x: hidden;
 }
